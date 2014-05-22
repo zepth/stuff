@@ -573,7 +573,7 @@ fourth attack hits AC[[((((@{BAB4}+0.1)+abs(@{BAB4}+0.1))/2)/(@{BAB4}+0.1))*(1d2
                 <span class="sheet-table-data-center-sm"><input type="text" class="sheet-table-data-center-skills"name="attr_decipher" value="@{int-mod}+@{decipherranks}+@{deciphermiscmod}" disabled="true"></span>
                 <span class="sheet-table-data-center-sm">= Int</span>
                 <span class="sheet-table-data-center-sm"><input type="text" class="sheet-table-data-center-skills"name="attr_intmod" value="@{int-mod}" disabled="true"></span>
-                <span class="sheet-table-data-center-sm">+<input type="numtext" style="width: 45px;ber" name="attr_decipherranks" value="0"></span>
+                <span class="sheet-table-data-center-sm">+<input type="text" class="sheet-table-data-center-skills"name="attr_decipherranks" value="0"></span>
                 <span class="sheet-table-data-center-sm">+ &nbsp;  -N/A-  &nbsp;  </span>
                 <span class="sheet-table-data-center-sm">+<input type="text" class="sheet-table-data-center-skills"name="attr_deciphermiscmod" value="0"></span>
                 <span class="sheet-table-data-center-sm"><textarea rows="1" cols="50" style="width: 50px; height: 20px;" name="attr_deciphermacro">@{character_name}s Decipher Script check: [[1d20 + @{decipher}]]</textarea></span>
@@ -585,7 +585,7 @@ fourth attack hits AC[[((((@{BAB4}+0.1)+abs(@{BAB4}+0.1))/2)/(@{BAB4}+0.1))*(1d2
                 <span class="sheet-table-data-center-sm"><input type="text" class="sheet-table-data-center-skills"name="attr_diplomacy" value="@{cha-mod}+@{diplomacyranks}+@{diplomacymiscmod}" disabled="true"></span>
                 <span class="sheet-table-data-center-sm">= Cha</span>
                 <span class="sheet-table-data-center-sm"><input type="text" class="sheet-table-data-center-skills"name="attr_chamod" value="@{cha-mod}" disabled="true"></span>
-                <span class="sheet-table-data-center-sm">+<input type="numtext" style="width: 45px;ber" name="attr_diplomacyranks" value="0"></span>
+                <span class="sheet-table-data-center-sm">+<input type="text" class="sheet-table-data-center-skills"name="attr_diplomacyranks" value="0"></span>
                 <span class="sheet-table-data-center-sm">+ &nbsp;  -N/A-  &nbsp;  </span>
                 <span class="sheet-table-data-center-sm">+<input type="text" class="sheet-table-data-center-skills"name="attr_diplomacymiscmod" value="0"></span>
                 <span class="sheet-table-data-center-sm"><textarea rows="1" cols="50" style="width: 50px; height: 20px;" name="attr_diplomacymacro">@{character_name}s Diplomacy check: [[1d20 + @{diplomacy}]]</textarea></span>
@@ -612,7 +612,7 @@ fourth attack hits AC[[((((@{BAB4}+0.1)+abs(@{BAB4}+0.1))/2)/(@{BAB4}+0.1))*(1d2
                 <span class="sheet-table-data-center-sm">+<input type="text" class="sheet-table-data-center-skills"name="attr_disguiseranks" value="0"></span>
                 <span class="sheet-table-data-center-sm">+ &nbsp;  -N/A-  &nbsp;  </span>
                 <span class="sheet-table-data-center-sm">+<input type="text" class="sheet-table-data-center-skills"name="attr_disguisemiscmod" value="0"></span>
-                <span class="sheet-table-data-center-sm"><textarea rows="1" cols="50" style="width: 50px; height: 20px;" name="attr_disguisemacro">@{character_name}s Disguise check: [[1d20 + @{disguise}]]</textarea></span>
+                <span class="sheet-table-data-center-sm"><textarea rows="1" cols="50" style="width: 50px; height: 20px;" name="attr_disguisemacro">/w gm @{character_name}s Disguise check: [[1d20 + @{disguise}]]</textarea></span>
                 <span class="sheet-table-data-center-sm"><button type="roll" name="DisguiseCheck" title='DisguiseCheck' value="@{disguisemacro}"></span>
             </div>
             <div class="sheet-table-row">
@@ -1022,6 +1022,30 @@ fourth attack hits AC[[((((@{BAB4}+0.1)+abs(@{BAB4}+0.1))/2)/(@{BAB4}+0.1))*(1d2
                 <span class="sheet-table-data-center-sm">+<input type="text" class="sheet-table-data-center-skills"name="attr_swimmiscmod" value="0"></span>
                 <span class="sheet-table-data-center-sm"><textarea rows="1" cols="50" style="width: 50px; height: 20px;" name="attr_swimmacro">@{character_name}s Swim check: [[1d20 + @{swim}]]</textarea></span>
                 <span class="sheet-table-data-center-sm"><button type="roll" name="SwimCheck" title='SwimCheck' value="@{swimmacro}"></span>
+            </div>
+            		<div class="sheet-table-row">
+                <span class="sheet-table-header2-left"><input type="checkbox" name="attr_tumbleclassskill" value="Class" style="width: 8px;"></span>
+                <span class="sheet-table-header2-left">Tumble</span>
+                <span class="sheet-table-data-center-sm"><input type="text" class="sheet-table-data-center-skills"name="attr_tumble" value="@{dex-mod}+@{tumbleranks}+@{tumblemiscmod}" disabled="true"></span>
+                <span class="sheet-table-data-center-sm">= Dex</span>
+                <span class="sheet-table-data-center-sm"><input type="text" class="sheet-table-data-center-skills"name="attr_dexmod" value="@{dex-mod}" disabled="true"></span>
+                <span class="sheet-table-data-center-sm">+<input type="text" class="sheet-table-data-center-skills"name="attr_tumbleranks" value="0"></span>
+                <span class="sheet-table-data-center-sm">+ &nbsp;  -N/A-  &nbsp;  </span>
+                <span class="sheet-table-data-center-sm">+<input type="text" class="sheet-table-data-center-skills"name="attr_tumblemiscmod" value="0"></span>
+                <span class="sheet-table-data-center-sm"><textarea rows="1" cols="50" style="width: 50px; height: 20px;" name="attr_tumblemacro">@{character_name}s Tumble check: [[1d20 + @{tumble}]]</textarea></span>
+                <span class="sheet-table-data-center-sm"><button type="roll" name="TumbleCheck" title='TumbleCheck' value="@{tumblemacro}"></span>
+            </div>
+            		<div class="sheet-table-row">
+                <span class="sheet-table-header2-left"><input type="checkbox" name="attr_magicdeviceclassskill" value="Class" style="width: 8px;"></span>
+                <span class="sheet-table-header2-left">Use Magic Device</span>
+                <span class="sheet-table-data-center-sm"><input type="text" class="sheet-table-data-center-skills"name="attr_magicdevice" value="@{cha-mod}+@{magicdeviceranks}+@{magicdevicemiscmod}" disabled="true"></span>
+                <span class="sheet-table-data-center-sm">= Cha</span>
+                <span class="sheet-table-data-center-sm"><input type="text" class="sheet-table-data-center-skills"name="attr_chamod" value="@{cha-mod}" disabled="true"></span>
+                <span class="sheet-table-data-center-sm">+<input type="text" class="sheet-table-data-center-skills"name="attr_magicdeviceranks" value="0"></span>
+                <span class="sheet-table-data-center-sm">+ &nbsp;  -N/A-  &nbsp;  </span>
+                <span class="sheet-table-data-center-sm">+<input type="text" class="sheet-table-data-center-skills"name="attr_magicdevicemiscmod" value="0"></span>
+                <span class="sheet-table-data-center-sm"><textarea rows="1" cols="50" style="width: 50px; height: 20px;" name="attr_magicdevicemacro">@{character_name}s Use Magic Device check: [[1d20 + @{magicdevice}]]</textarea></span>
+                <span class="sheet-table-data-center-sm"><button type="roll" name="MagicDeviceCheck" title='MagicDeviceCheck' value="@{magicdevicemacro}"></span>
             </div>
 			<div class="sheet-table-row">
                 <span class="sheet-table-header2-left"><input type="checkbox" name="attr_useropeclassskill" value="Class" style="width: 8px;"></span>
