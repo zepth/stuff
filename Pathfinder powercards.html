@@ -1226,7 +1226,7 @@
 				<span class="sheet-table-header">Misc</span>
 			</div>
 			<div class="sheet-table-row">
-				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Acrobatics-Check}" type="roll" value="@{character_name}'s Acrobatics check: [[1d20 + @{Acrobatics}]]" name="roll_Acrobatics-Check"></button></span>
+				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Acrobatics-Check}" type="roll" value="/em @{character_name} makes an acrobatics check&#x00A;!power --name|Acrobatics --leftsub|@{character_name} --Result|[[1d20 + @{Acrobatics}]] --Info|http://paizo.com/pathfinderRPG/prd/skills/acrobatics.html#_acrobatics"></button></span>
 				<span class="sheet-table-data sheet-center"><input title="@{Acrobatics-cs}" type="checkbox" name="attr_Acrobatics-cs" value="((((3 * @{Acrobatics-ranks}) + 3) - abs((3 * @{Acrobatics-ranks}) - 3)) / 2)" /></span>
 				<span class="sheet-table-data sheet-center">*</span>
 				<span class="sheet-table-data sheet-left">Acrobatics</span>
@@ -1250,7 +1250,7 @@
 				<span class="sheet-table-data sheet-center"><input title="@{Acrobatics-misc}" type="number" name="attr_Acrobatics-misc" value="0"></span>
 			</div>
 			<div class="sheet-table-row">
-				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Appraise-Check}" type="roll" value="@{character_name}'s Appraise check: [[1d20 + @{Appraise}]]" name="roll_Appraise-Check"></button></span>
+				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Appraise-Check}" type="roll" value="/em @{character_name} looks over his/her treasure with an appraising eye&#x00A;!power --whisper| --name|Appraise --leftsub|@{character_name} --Result|[[1d20 + @{Appraise}]] --0-15|Wildly innacurate --15-20|Value within 20% --20+|Accurate Value --25+|Determine if the item has magic properties(But not what those properties are) --Rare items|Increase DC by 5 or more at GM discretion" name="roll_Appraise-Check"></button></span>
 				<span class="sheet-table-data sheet-center"><input title="@{Appraise-cs}" type="checkbox" name="attr_Appraise-cs" value="((((3 * @{Appraise-ranks}) + 3) - abs((3 * @{Appraise-ranks}) - 3)) / 2)" /></span>
 				<span class="sheet-table-data sheet-center">*</span>
 				<span class="sheet-table-data sheet-left">Appraise</span>
@@ -1274,7 +1274,8 @@
 				<span class="sheet-table-data sheet-center"><input title="@{Appraise-misc}" type="number" name="attr_Appraise-misc" value="0"></span>
 			</div>
 			<div class="sheet-table-row">
-				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Bluff-Check}" type="roll" value="@{character_name}'s Bluff check: [[1d20 + @{Bluff}]]" name="roll_Bluff-Check"></button></span>
+				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Bluff-Check}" type="roll" value="/em @{character_name} is very loose with the truth&#x00A;!power --whisper| --name|Bluff --leftsub|@{character_name} --Result|[[1d20 + @{Bluff}]] --Info|Opposed by opponent's Sense Motive skill --Modifiers| --^+5|The target wants to believe you. The target is drunk or impaired --+10|You possess convincing proof ---5|The lie is unlikely ---10|The lie is far-fetched ---20|The lie is impossible
+" name="roll_Bluff-Check"></button></span>
 				<span class="sheet-table-data sheet-center"><input title="@{Bluff-cs}" type="checkbox" name="attr_Bluff-cs" value="((((3 * @{Bluff-ranks}) + 3) - abs((3 * @{Bluff-ranks}) - 3)) / 2)" /></span>
 				<span class="sheet-table-data sheet-center">*</span>
 				<span class="sheet-table-data sheet-left">Bluff</span>
@@ -1298,7 +1299,8 @@
 				<span class="sheet-table-data sheet-center"><input title="@{Bluff-misc}" type="number" name="attr_Bluff-misc" value="0"></span>
 			</div>
 			<div class="sheet-table-row">
-				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Climb-Check}" type="roll" value="@{character_name}'s Climb check: [[1d20 + @{Climb}]]" name="roll_Climb-Check"></button></span>
+				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Climb-Check}" type="roll" value="/em @{character_name} makes a climb check&#x00A;!power --name|Climb --leftsub|@{character_name} --Result|[[1d20 + @{Climb}]] --Info|On successful check advance at 1/4 speed. Failure by 5+ indicates a fall. --Climb DC| --5+|A rope with a wall to brace against, or a knotted rope--10+|A surface with ledges to hold on to and stand on --15+|Any surface with adequate handholds and footholds, or an unknotted rope, or pulling yourself up when dangling by your hands. --20+|Uneven surface such as dungeon wall --25+|Natural rock wall or brick wall --30+|Overhang or ceiling with handholds only
+" name="roll_Climb-Check"></button></span>
 				<span class="sheet-table-data sheet-center"><input title="@{Climb-cs}" type="checkbox" name="attr_Climb-cs" value="((((3 * @{Climb-ranks}) + 3) - abs((3 * @{Climb-ranks}) - 3)) / 2)" /></span>
 				<span class="sheet-table-data sheet-center">*</span>
 				<span class="sheet-table-data sheet-left">Climb</span>
@@ -1322,7 +1324,7 @@
 				<span class="sheet-table-data sheet-center"><input title="@{Climb-misc}" type="number" name="attr_Climb-misc" value="0"></span>
 			</div>
 			<div class="sheet-table-row">
-				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Craft-Check}" type="roll" value="@{character_name}'s Craft: @{Craft-name} check: [[1d20 + @{Craft}]]" name="roll_Craft-Check"></button></span>
+				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Craft-Check}" type="roll" value="!power --name|Craft @{Craft-name} --leftsub|@{character_name} --Result|[[1d20 + @{Craft}]] --Info|http://paizo.com/pathfinderRPG/prd/skills/craft.html#_craft" name="roll_Craft-Check"></button></span>
 				<span class="sheet-table-data sheet-center"><input title="@{Craft-cs}" type="checkbox" name="attr_Craft-cs" value="((((3 * @{Craft-ranks}) + 3) - abs((3 * @{Craft-ranks}) - 3)) / 2)" /></span>
 				<span class="sheet-table-data sheet-center">*</span>
 				<span class="sheet-table-data sheet-left">Craft: <input title="@{Craft-name}" style="width:auto;" type="text" name="attr_Craft-name"></span>
@@ -1346,7 +1348,7 @@
 				<span class="sheet-table-data sheet-center"><input title="@{Craft-misc}" type="number" name="attr_Craft-misc" value="0"></span>
 			</div>
 			<div class="sheet-table-row">
-				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Craft2-Check}" type="roll" value="@{character_name}'s Craft: @{Craft2-name} check: [[1d20 + @{Craft2}]]" name="roll_Craft2-Check"></button></span>
+				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Craft2-Check}" type="roll" value="!power --name|Craft @{Craft2-name} --leftsub|@{character_name} --Result|[[1d20 + @{Craft2}]] --Info|http://paizo.com/pathfinderRPG/prd/skills/craft.html#_craft" name="roll_Craft2-Check"></button></span>
 				<span class="sheet-table-data sheet-center"><input title="@{Craft2-cs}" type="checkbox" name="attr_Craft2-cs" value="((((3 * @{Craft2-ranks}) + 3) - abs((3 * @{Craft2-ranks}) - 3)) / 2)" /></span>
 				<span class="sheet-table-data sheet-center">*</span>
 				<span class="sheet-table-data sheet-left">Craft: <input title="@{Craft2-name}" style="width:auto;" type="text" name="attr_Craft2-name"></span>
@@ -1370,7 +1372,7 @@
 				<span class="sheet-table-data sheet-center"><input title="@{Craft2-misc}" type="number" name="attr_Craft2-misc" value="0"></span>
 			</div>
 			<div class="sheet-table-row">
-				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Craft3-Check}" type="roll" value="@{character_name}'s Craft: @{Craft3-name} check: [[1d20 + @{Craft3}]]" name="roll_Craft3-Check"></button></span>
+				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Craft3-Check}" type="roll" value="!power --name|Craft @{Craft3-name} --leftsub|@{character_name} --Result|[[1d20 + @{Craft3}]] --Info|http://paizo.com/pathfinderRPG/prd/skills/craft.html#_craft" name="roll_Craft3-Check"></button></span>
 				<span class="sheet-table-data sheet-center"><input title="@{Craft3-cs}" type="checkbox" name="attr_Craft3-cs" value="((((3 * @{Craft3-ranks}) + 3) - abs((3 * @{Craft3-ranks}) - 3)) / 2)" /></span>
 				<span class="sheet-table-data sheet-center">*</span>
 				<span class="sheet-table-data sheet-left">Craft: <input title="@{Craft3-name}" style="width:auto;" type="text" name="attr_Craft3-name"></span>
@@ -1394,7 +1396,8 @@
 				<span class="sheet-table-data sheet-center"><input title="@{Craft3-misc}" type="number" name="attr_Craft3-misc" value="0"></span>
 			</div>
 			<div class="sheet-table-row">
-				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Diplomacy-Check}" type="roll" value="@{character_name}'s Diplomacy check: [[1d20 + @{Diplomacy}]]" name="roll_Diplomacy-Check"></button></span>
+				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Diplomacy-Check}" type="roll" value="/em @{character_name} is being very diplomatic&#x00A;!power --whisper| --name|Diplomacy --leftsub|@{character_name} --Result|[[1d20 + @{Diplomacy}]] --Info|Increase attitude of NPC towards you by one step, for every 5 above the DC improve an additional step. --Hostile|25 + creatures CHA mod --Unfriendly|20 + creatures CHA mod --Indifferent|15 + creatures CHA mod --Friendly|10 + creatures CHA mod --Helpful|0 + creatures CHA mod
+" name="roll_Diplomacy-Check"></button></span>
 				<span class="sheet-table-data sheet-center"><input title="@{Diplomacy-cs}" type="checkbox" name="attr_Diplomacy-cs" value="((((3 * @{Diplomacy-ranks}) + 3) - abs((3 * @{Diplomacy-ranks}) - 3)) / 2)" /></span>
 				<span class="sheet-table-data sheet-center">*</span>
 				<span class="sheet-table-data sheet-left">Diplomacy</span>
@@ -1418,7 +1421,8 @@
 				<span class="sheet-table-data sheet-center"><input title="@{Diplomacy-misc}" type="number" name="attr_Diplomacy-misc" value="0"></span>
 			</div>
 			<div class="sheet-table-row">
-				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Disable-Device-Check}" type="roll" value="@{character_name}'s Disable Device check: [[1d20 + @{Disable-Device}]]" name="roll_Disable-Device-Check"></button></span>
+				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Disable-Device-Check}" type="roll" value="/em @{character_name} makes a Disable Device check&#x00A;!power --whisper| --name|Disable Device --leftsub|@{character_name} --Result|[[1d20 + @{Disable-Device}]] --Info|Disarm traps, open locks, sabotage devices --10+|Jam a lock --15+|Sabotage a wheel --20+|Disarm or reset a trap. Simple lock --25+|Disarm complex trap. Sabotage clockwork device. Average lock --30+|Good lock --35+|Superior lock
+" name="roll_Disable-Device-Check"></button></span>
 				<span class="sheet-table-data sheet-center"><input title="@{Disable-Device-cs}" type="checkbox" name="attr_Disable-Device-cs" value="((((3 * @{Disable-Device-ranks}) + 3) - abs((3 * @{Disable-Device-ranks}) - 3)) / 2)" /></span>
 				<span class="sheet-table-data sheet-center"></span>
 				<span class="sheet-table-data sheet-left">Disable Device</span>
@@ -1442,7 +1446,8 @@
 				<span class="sheet-table-data sheet-center"><input title="@{Disable-Device-misc}" type="number" name="attr_Disable-Device-misc" value="0"></span>
 			</div>
 			<div class="sheet-table-row">
-				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Disguise-Check}" type="roll" value="@{character_name}'s Disguise check: [[1d20 + @{Disguise}]]" name="roll_Disguise-Check"></button></span>
+				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Disguise-Check}" type="roll" value="/em @{character_name} is busy putting his/her face on&#x00A;!power --whisper| --name|Disguise --leftsub|@{character_name} --Result|[[1d20 + @{Disguise}]] --Info|Opposed by opponent's Perception check --Modifiers|http://paizo.com/pathfinderRPG/prd/skills/disguise.html#_disguise
+" name="roll_Disguise-Check"></button></span>
 				<span class="sheet-table-data sheet-center"><input title="@{Disguise-cs}" type="checkbox" name="attr_Disguise-cs" value="((((3 * @{Disguise-ranks}) + 3) - abs((3 * @{Disguise-ranks}) - 3)) / 2)" /></span>
 				<span class="sheet-table-data sheet-center">*</span>
 				<span class="sheet-table-data sheet-left">Disguise</span>
@@ -1466,7 +1471,7 @@
 				<span class="sheet-table-data sheet-center"><input title="@{Disguise-misc}" type="number" name="attr_Disguise-misc" value="0"></span>
 			</div>
 			<div class="sheet-table-row">
-				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Escape-Artist-Check}" type="roll" value="@{character_name}'s Escape Artist check: [[1d20 + @{Escape-Artist}]]" name="roll_Escape-Artist-Check"></button></span>
+				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Escape-Artist-Check}" type="roll" value="/em @{character_name} tries to escape&#x00A;!power --name|Escape Artist --leftsub|@{character_name} --Result|[[1d20 + @{Escape-Artist}]] --Info|Slip out of bonds and escape from grapples --Rope/Bindings|Binders CMB + 20 --Net/Entangle|20 --Snare spell|23 --Manacles|30 --Tight space|30 --Mwk Manacles|35 --Grappler|Grappler's CMD" name="roll_Escape-Artist-Check"></button></span>
 				<span class="sheet-table-data sheet-center"><input title="@{Escape-Artist-cs}" type="checkbox" name="attr_Escape-Artist-cs" value="((((3 * @{Escape-Artist-ranks}) + 3) - abs((3 * @{Escape-Artist-ranks}) - 3)) / 2)" /></span>
 				<span class="sheet-table-data sheet-center">*</span>
 				<span class="sheet-table-data sheet-left">Escape Artist</span>
@@ -1490,7 +1495,7 @@
 				<span class="sheet-table-data sheet-center"><input title="@{Escape-Artist-misc}" type="number" name="attr_Escape-Artist-misc" value="0"></span>
 			</div>
 			<div class="sheet-table-row">
-				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Fly-Check}" type="roll" value="@{character_name}'s Fly check: [[1d20 + @{Fly}]]" name="roll_Fly-Check"></button></span>
+				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Fly-Check}" type="roll" value="/em @{character_name} is flying&#x00A;!power --name|Fly --leftsub|@{character_name} --Result|[[1d20 + @{Fly}]] --Info|http://paizo.com/pathfinderRPG/prd/skills/fly.html#_fly" name="roll_Fly-Check"></button></span>
 				<span class="sheet-table-data sheet-center"><input title="@{Fly-cs}" type="checkbox" name="attr_Fly-cs" value="((((3 * @{Fly-ranks}) + 3) - abs((3 * @{Fly-ranks}) - 3)) / 2)" /></span>
 				<span class="sheet-table-data sheet-center">*</span>
 				<span class="sheet-table-data sheet-left">Fly</span>
@@ -1514,7 +1519,8 @@
 				<span class="sheet-table-data sheet-center"><input title="@{Fly-misc}" type="number" name="attr_Fly-misc" value="0"></span>
 			</div>
 			<div class="sheet-table-row">
-				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Handle-Animal-Check}" type="roll" value="@{character_name}'s Handle Animal check: [[1d20 + @{Handle-Animal}]]" name="roll_Handle-Animal-Check"></button></span>
+				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Handle-Animal-Check}" type="roll" value="/em @{character_name} is working with animals&#x00A;!power --whisper| --name|Handle Animal --leftsub|@{character_name} --Result|[[1d20 + @{Handle-Animal}]] --Handle an animal|10 --Push an animal|25 --Teach a trick|15 or 20 --Train an animal|15 or 20 --Rear wild animal|15 + HD of animal --Info|http://paizo.com/pathfinderRPG/prd/skills/handleAnimal.html#_handle-animal
+" name="roll_Handle-Animal-Check"></button></span>
 				<span class="sheet-table-data sheet-center"><input title="@{Handle-Animal-cs}" type="checkbox" name="attr_Handle-Animal-cs" value="((((3 * @{Handle-Animal-ranks}) + 3) - abs((3 * @{Handle-Animal-ranks}) - 3)) / 2)" /></span>
 				<span class="sheet-table-data sheet-center"></span>
 				<span class="sheet-table-data sheet-left">Handle Animal</span>
@@ -1538,7 +1544,8 @@
 				<span class="sheet-table-data sheet-center"><input title="@{Handle-Animal-misc}" type="number" name="attr_Handle-Animal-misc" value="0"></span>
 			</div>
 			<div class="sheet-table-row">
-				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Heal-Check}" type="roll" value="@{character_name}'s Heal check: [[1d20 + @{Heal}]]" name="roll_Heal-Check"></button></span>
+				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Heal-Check}" type="roll" value="/em @{character_name} administers first aid&#x00A;!power --whisper| --name|Heal --leftsub|@{character_name} --Result|[[1d20 + @{Heal}]] --Stabilise dying character|15 --Long-term care|15 --Treat Wounds|15 --Treat deadly wounds|20 (2 uses of healers kit) --Treat poison|Poison save DC --Treat disease|Disease Save DC
+" name="roll_Heal-Check"></button></span>
 				<span class="sheet-table-data sheet-center"><input title="@{Heal-cs}" type="checkbox" name="attr_Heal-cs" value="((((3 * @{Heal-ranks}) + 3) - abs((3 * @{Heal-ranks}) - 3)) / 2)" /></span>
 				<span class="sheet-table-data sheet-center">*</span>
 				<span class="sheet-table-data sheet-left">Heal</span>
@@ -1562,7 +1569,8 @@
 				<span class="sheet-table-data sheet-center"><input title="@{Heal-misc}" type="number" name="attr_Heal-misc" value="0"></span>
 			</div>
 			<div class="sheet-table-row">
-				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Intimidate-Check}" type="roll" value="@{character_name}'s Intimidate check: [[1d20 + @{Intimidate}]]" name="roll_Intimidate-Check"></button></span>
+				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Intimidate-Check}" type="roll" value="/em @{character_name} tries to act tough&#x00A;!power --whisper| --name|Intimidate --leftsub|@{character_name} --Result|[[1d20 + @{Intimidate}]] --DC|10 + HD + WIS mod of opponent (+5 for every subsequent attempt) --Info|You can use Intimidate to force an opponent to act friendly toward you for [[1d6 * 10]] minutes after which they may report you to local authorities or hinder your activities --Demoralize|Target is shaken for 1rnd + 1rnd for every 5 you beat the DC 
+" name="roll_Intimidate-Check"></button></span>
 				<span class="sheet-table-data sheet-center"><input title="@{Intimidate-cs}" type="checkbox" name="attr_Intimidate-cs" value="((((3 * @{Intimidate-ranks}) + 3) - abs((3 * @{Intimidate-ranks}) - 3)) / 2)" /></span>
 				<span class="sheet-table-data sheet-center">*</span>
 				<span class="sheet-table-data sheet-left">Intimidate</span>
@@ -1586,7 +1594,8 @@
 				<span class="sheet-table-data sheet-center"><input title="@{Intimidate-misc}" type="number" name="attr_Intimidate-misc" value="0"></span>
 			</div>
 			<div class="sheet-table-row">
-				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Knowledge-Arcana-Check}" type="roll" value="@{character_name}'s Knowledge (Arcana) check: [[1d20 + @{Knowledge-Arcana}]]" name="roll_Knowledge-Arcana-Check"></button></span>
+				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Knowledge-Arcana-Check}" type="roll" value="/em @{character_name} makes an Arcana check&#x00A;!power --whisper| --name|Knowledge (Arcana) --leftsub|@{character_name} --Result|[[1d20 + @{Knowledge-Arcana}]] --Subjects|ancient mysteries, magic traditions, arcane symbols, constructs, dragons, magical beasts --Identify auras|15 + spell level --Identify spell effect in place|20 + spell level --Identify magic items|20 + spell level --Identify spell cast on you|25 + spell level --Identify spell cast using specific material component| 20
+" name="roll_Knowledge-Arcana-Check"></button></span>
 				<span class="sheet-table-data sheet-center"><input title="@{Knowledge-Arcana-cs}" type="checkbox" name="attr_Knowledge-Arcana-cs" value="((((3 * @{Knowledge-Arcana-ranks}) + 3) - abs((3 * @{Knowledge-Arcana-ranks}) - 3)) / 2)" /></span>
 				<span class="sheet-table-data sheet-center"></span>
 				<span class="sheet-table-data sheet-left">Knowledge (Arcana)</span>
@@ -1610,7 +1619,8 @@
 				<span class="sheet-table-data sheet-center"><input title="@{Knowledge-Arcana-misc}" type="number" name="attr_Knowledge-Arcana-misc" value="0"></span>
 			</div>
 			<div class="sheet-table-row">
-				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Knowledge-Dungeoneering-Check}" type="roll" value="@{character_name}'s Knowledge (Dungeoneering) check: [[1d20 + @{Knowledge-Dungeoneering}]]" name="roll_Knowledge-Dungeoneering-Check"></button></span>
+				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Knowledge-Dungeoneering-Check}" type="roll" value="/em @{character_name} makes a Dungeoneering check&#x00A;!power --whisper| --name|Knowledge (Dungeoneering) --leftsub|@{character_name} --Result|[[1d20 + @{Knowledge-Dungeoneering}]] --Subjects|aberrations, caverns, oozes, spelunking --Identify underground hazard|15 + hazard CR --Identify mineral, stone or metal|10 --Determine slope|15 --Determine depth underground|20
+" name="roll_Knowledge-Dungeoneering-Check"></button></span>
 				<span class="sheet-table-data sheet-center"><input title="@{Knowledge-Dungeoneering-cs}" type="checkbox" name="attr_Knowledge-Dungeoneering-cs" value="((((3 * @{Knowledge-Dungeoneering-ranks}) + 3) - abs((3 * @{Knowledge-Dungeoneering-ranks}) - 3)) / 2)" /></span>
 				<span class="sheet-table-data sheet-center"></span>
 				<span class="sheet-table-data sheet-left">Knowledge (Dungeoneering)</span>
@@ -1634,7 +1644,8 @@
 				<span class="sheet-table-data sheet-center"><input title="@{Knowledge-Dungeoneering-misc}" type="number" name="attr_Knowledge-Dungeoneering-misc" value="0"></span>
 			</div>
 			<div class="sheet-table-row">
-				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Knowledge-Engineering-Check}" type="roll" value="@{character_name}'s Knowledge (Engineering) check: [[1d20 + @{Knowledge-Engineering}]]" name="roll_Knowledge-Engineering-Check"></button></span>
+				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Knowledge-Engineering-Check}" type="roll" value="/em @{character_name} makes an Engineering check&#x00A;!power --whisper| --name|Knowledge (Engineering) --leftsub|@{character_name} --Result|[[1d20 + @{Knowledge-Engineering}]] --Subjects|buildings, aqueducts, bridges, fortifications --Identify dangerous construction|10 --Determine structure's style or age|15 --Determine structure's weakness|20
+" name="roll_Knowledge-Engineering-Check"></button></span>
 				<span class="sheet-table-data sheet-center"><input title="@{Knowledge-Engineering-cs}" type="checkbox" name="attr_Knowledge-Engineering-cs" value="((((3 * @{Knowledge-Engineering-ranks}) + 3) - abs((3 * @{Knowledge-Engineering-ranks}) - 3)) / 2)" /></span>
 				<span class="sheet-table-data sheet-center"></span>
 				<span class="sheet-table-data sheet-left">Knowledge (Engineering)</span>
@@ -1658,7 +1669,8 @@
 				<span class="sheet-table-data sheet-center"><input title="@{Knowledge-Engineering-misc}" type="number" name="attr_Knowledge-Engineering-misc" value="0"></span>
 			</div>
 			<div class="sheet-table-row">
-				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Knowledge-Geography-Check}" type="roll" value="@{character_name}'s Knowledge (Geography) check: [[1d20 + @{Knowledge-Geography}]]" name="roll_Knowledge-Geography-Check"></button></span>
+				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Knowledge-Geography-Check}" type="roll" value="/em @{character_name} makes a Geography check&#x00A;!power --whisper| --name|Knowledge (Geography) --leftsub|@{character_name} --Result|[[1d20 + @{Knowledge-Geography}]] --Subjects|lands, terrain, climate, people --Identify an ethnicity or accent|10 --Recognise regional terrain features|15 --Know location of nearest community|20
+" name="roll_Knowledge-Geography-Check"></button></span>
 				<span class="sheet-table-data sheet-center"><input title="@{Knowledge-Geography-cs}" type="checkbox" name="attr_Knowledge-Geography-cs" value="((((3 * @{Knowledge-Geography-ranks}) + 3) - abs((3 * @{Knowledge-Geography-ranks}) - 3)) / 2)" /></span>
 				<span class="sheet-table-data sheet-center"></span>
 				<span class="sheet-table-data sheet-left">Knowledge (Geography)</span>
@@ -1682,7 +1694,8 @@
 				<span class="sheet-table-data sheet-center"><input title="@{Knowledge-Geography-misc}" type="number" name="attr_Knowledge-Geography-misc" value="0"></span>
 			</div>
 			<div class="sheet-table-row">
-				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Knowledge-History-Check}" type="roll" value="@{character_name}'s Knowledge (History) check: [[1d20 + @{Knowledge-History}]]" name="roll_Knowledge-History-Check"></button></span>
+				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Knowledge-History-Check}" type="roll" value="/em @{character_name} makes a History check&#x00A;!power --whisper| --name|Knowledge (History) --leftsub|@{character_name} --Result|[[1d20 + @{Knowledge-History}]] --Subjects|wars, colonies, migrations, founding of cities --Know recent or significant historical event|10 --Determine date of specific event|15 --Know obscure or ancient historic event|20
+" name="roll_Knowledge-History-Check"></button></span>
 				<span class="sheet-table-data sheet-center"><input title="@{Knowledge-History-cs}" type="checkbox" name="attr_Knowledge-History-cs" value="((((3 * @{Knowledge-History-ranks}) + 3) - abs((3 * @{Knowledge-History-ranks}) - 3)) / 2)" /></span>
 				<span class="sheet-table-data sheet-center"></span>
 				<span class="sheet-table-data sheet-left">Knowledge (History)</span>
@@ -1706,7 +1719,8 @@
 				<span class="sheet-table-data sheet-center"><input title="@{Knowledge-History-misc}" type="number" name="attr_Knowledge-History-misc" value="0"></span>
 			</div>
 			<div class="sheet-table-row">
-				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Knowledge-Local-Check}" type="roll" value="@{character_name}'s Knowledge (Local) check: [[1d20 + @{Knowledge-Local}]]" name="roll_Knowledge-Local-Check"></button></span>
+				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Knowledge-Local-Check}" type="roll" value="/em @{character_name} makes a Local Knowledge check&#x00A;!power --whisper| --name|Knowledge (Local) --leftsub|@{character_name} --Result|[[1d20 + @{Knowledge-Local}]] --Subjects|legends, personalities, inhabitants, laws, customs, traditions, humanoids --Know local laws, rulers, and popular locations|10 --Know common rumour or local tradition|15 --Know hidden organisations, rulers, locations|20
+" name="roll_Knowledge-Local-Check"></button></span>
 				<span class="sheet-table-data sheet-center"><input title="@{Knowledge-Local-cs}" type="checkbox" name="attr_Knowledge-Local-cs" value="((((3 * @{Knowledge-Local-ranks}) + 3) - abs((3 * @{Knowledge-Local-ranks}) - 3)) / 2)" /></span>
 				<span class="sheet-table-data sheet-center"></span>
 				<span class="sheet-table-data sheet-left">Knowledge (Local)</span>
@@ -1730,7 +1744,8 @@
 				<span class="sheet-table-data sheet-center"><input title="@{Knowledge-Local-misc}" type="number" name="attr_Knowledge-Local-misc" value="0"></span>
 			</div>
 			<div class="sheet-table-row">
-				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Knowledge-Nature-Check}" type="roll" value="@{character_name}'s Knowledge (Nature) check: [[1d20 + @{Knowledge-Nature}]]" name="roll_Knowledge-Nature-Check"></button></span>
+				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Knowledge-Nature-Check}" type="roll" value="/em @{character_name} makes a Nature check&#x00A;!power --whisper| --name|Knowledge (Nature) --leftsub|@{character_name} --Result|[[1d20 + @{Knowledge-Nature}]] --Subjects|animals, fey, monstrous humanoids, plants, seasons and cycles, weather, vermin --Identify natural hazard|15 + CR --Identify common plant/animal|10 --Identify weather phenomenon|15 --Determine artificial nature of feature|20
+" name="roll_Knowledge-Nature-Check"></button></span>
 				<span class="sheet-table-data sheet-center"><input title="@{Knowledge-Nature-cs}" type="checkbox" name="attr_Knowledge-Nature-cs" value="((((3 * @{Knowledge-Nature-ranks}) + 3) - abs((3 * @{Knowledge-Nature-ranks}) - 3)) / 2)" /></span>
 				<span class="sheet-table-data sheet-center"></span>
 				<span class="sheet-table-data sheet-left">Knowledge (Nature)</span>
@@ -1754,7 +1769,8 @@
 				<span class="sheet-table-data sheet-center"><input title="@{Knowledge-Nature-misc}" type="number" name="attr_Knowledge-Nature-misc" value="0"></span>
 			</div>
 			<div class="sheet-table-row">
-				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Knowledge-Nobility-Check}" type="roll" value="@{character_name}'s Knowledge (Nobility) check: [[1d20 + @{Knowledge-Nobility}]]" name="roll_Knowledge-Nobility-Check"></button></span>
+				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Knowledge-Nobility-Check}" type="roll" value="/em @{character_name} makes a Nobility knowledge check&#x00A;!power --whisper| --name|Knowledge (Nobility) --leftsub|@{character_name} --Result|[[1d20 + @{Knowledge-Nobility}]] --Subjects|lineages, heraldry, personalities, royalty --Know current rulers and their symbols|10 --Know proper ettiquette|15 --Know line of succession|20
+" name="roll_Knowledge-Nobility-Check"></button></span>
 				<span class="sheet-table-data sheet-center"><input title="@{Knowledge-Nobility-cs}" type="checkbox" name="attr_Knowledge-Nobility-cs" value="((((3 * @{Knowledge-Nobility-ranks}) + 3) - abs((3 * @{Knowledge-Nobility-ranks}) - 3)) / 2)" /></span>
 				<span class="sheet-table-data sheet-center"></span>
 				<span class="sheet-table-data sheet-left">Knowledge (Nobility)</span>
@@ -1778,7 +1794,8 @@
 				<span class="sheet-table-data sheet-center"><input title="@{Knowledge-Nobility-misc}" type="number" name="attr_Knowledge-Nobility-misc" value="0"></span>
 			</div>
 			<div class="sheet-table-row">
-				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Knowledge-Planes-Check}" type="roll" value="@{character_name}'s Knowledge (Planes) check: [[1d20 + @{Knowledge-Planes}]]" name="roll_Knowledge-Planes-Check"></button></span>
+				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Knowledge-Planes-Check}" type="roll" value="/em @{character_name} makes a Planar knowledge check&#x00A;!power --whisper| --name|Knowledge (Planes) --leftsub|@{character_name} --Result|[[1d20 + @{Knowledge-Planes}]] --Subjects|the Inner Planes, the Outer Planes, the Astral Plane, the Ethereal Plane, outsiders, planar magic --Know names of planes|10 --Recognise current plane|15 --Identify creature's planar origin|20
+" name="roll_Knowledge-Planes-Check"></button></span>
 				<span class="sheet-table-data sheet-center"><input title="@{Knowledge-Planes-cs}" type="checkbox" name="attr_Knowledge-Planes-cs" value="((((3 * @{Knowledge-Planes-ranks}) + 3) - abs((3 * @{Knowledge-Planes-ranks}) - 3)) / 2)" /></span>
 				<span class="sheet-table-data sheet-center"></span>
 				<span class="sheet-table-data sheet-left">Knowledge (Planes)</span>
@@ -1802,7 +1819,8 @@
 				<span class="sheet-table-data sheet-center"><input title="@{Knowledge-Planes-misc}" type="number" name="attr_Knowledge-Planes-misc" value="0"></span>
 			</div>
 			<div class="sheet-table-row">
-				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Knowledge-Religion-Check}" type="roll" value="@{character_name}'s Knowledge (Religion) check: [[1d20 + @{Knowledge-Religion}]]" name="roll_Knowledge-Religion-Check"></button></span>
+				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Knowledge-Religion-Check}" type="roll" value="/em @{character_name} makes a Religion check&#x00A;!power --whisper| --name|Knowledge (Religion) --leftsub|@{character_name} --Result|[[1d20 + @{Knowledge-Religion}]] --Subjects|gods and goddesses, mythic history, ecclesiastic tradition, holy symbols, undead --Recognise common deity's symbol or clergy|10 --Know common mythology and tenets|15 --Recognise an obscure deity's symbol or clergy|20
+" name="roll_Knowledge-Religion-Check"></button></span>
 				<span class="sheet-table-data sheet-center"><input title="@{Knowledge-Religion-cs}" type="checkbox" name="attr_Knowledge-Religion-cs" value="((((3 * @{Knowledge-Religion-ranks}) + 3) - abs((3 * @{Knowledge-Religion-ranks}) - 3)) / 2)" /></span>
 				<span class="sheet-table-data sheet-center"></span>
 				<span class="sheet-table-data sheet-left">Knowledge (Religion)</span>
@@ -1826,7 +1844,7 @@
 				<span class="sheet-table-data sheet-center"><input title="@{Knowledge-Religion-misc}" type="number" name="attr_Knowledge-Religion-misc" value="0"></span>
 			</div>
 			<div class="sheet-table-row">
-				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Linguistics-Check}" type="roll" value="@{character_name}'s Linguistics check: [[1d20 + @{Linguistics}]]" name="roll_Linguistics-Check"></button></span>
+				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Linguistics-Check}" type="roll" value="/em @{character_name} tries to interpret an unknown language&#x00A;!power --whisper| --name|Linguistics --leftsub|@{character_name} --Result|[[1d20 + @{Linguistics}]] --info| You can decipher writing in an unfamiliar language. If the check fails, make a DC 5 Wisdom check [[1d20+@{WIS-mod}]] to see if you avoid drawing a false conclusion about the text. --Simple message|20 --Standard text|25 --Intricate, exotic or very old|30" name="roll_Linguistics-Check"></button></span>
 				<span class="sheet-table-data sheet-center"><input title="@{Linguistics-cs}" type="checkbox" name="attr_Linguistics-cs" value="((((3 * @{Linguistics-ranks}) + 3) - abs((3 * @{Linguistics-ranks}) - 3)) / 2)" /></span>
 				<span class="sheet-table-data sheet-center"></span>
 				<span class="sheet-table-data sheet-left">Linguistics</span>
@@ -1850,7 +1868,8 @@
 				<span class="sheet-table-data sheet-center"><input title="@{Linguistics-misc}" type="number" name="attr_Linguistics-misc" value="0"></span>
 			</div>
 			<div class="sheet-table-row">
-				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Perception-Check}" type="roll" value="@{character_name}'s Perception check: [[1d20 + @{Perception}]]" name="roll_Perception-Check"></button></span>
+				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Perception-Check}" type="roll" value="/em @{character_name} makes a Perception check&#x00A;!power --whisper| --name|Perception --leftsub|@{character_name} --Result|[[1d20 + @{Perception}]] --Info|Hear or see things of interest, detect traps etc http://paizo.com/pathfinderRPG/prd/skills/perception.html#_perception
+" name="roll_Perception-Check"></button></span>
 				<span class="sheet-table-data sheet-center"><input title="@{Perception-cs}" type="checkbox" name="attr_Perception-cs" value="((((3 * @{Perception-ranks}) + 3) - abs((3 * @{Perception-ranks}) - 3)) / 2)" /></span>
 				<span class="sheet-table-data sheet-center">*</span>
 				<span class="sheet-table-data sheet-left">Perception</span>
@@ -1874,7 +1893,8 @@
 				<span class="sheet-table-data sheet-center"><input title="@{Perception-misc}" type="number" name="attr_Perception-misc" value="0"></span>
 			</div>
 			<div class="sheet-table-row">
-				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Perform-Check}" type="roll" value="@{character_name}'s Perform: @{Perform-name} check: [[1d20 + @{Perform}]]" name="roll_Perform-Check"></button></span>
+				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Perform-Check}" type="roll" value="/em @{character_name} puts on a performance&#x00A;!power --whisper| --name|Performance: @{Perform-name} --leftsub|@{character_name} --Result|[[1d20 + @{Perform}]] --10+|Routine performance. You can earn [[1d10]]cp/day --15+|Enjoyable performance. Earn [[1d10]]sp/day --20+|Great performance. Earn[[3d10]]sp/day. In time you may be invited to a professional troupe --25+|Memorable performance. Earn [[1d6]]gp/day. You may come to attention of noble patrons and develop reputation --30+|Extraordinary performance. Earn [[3d6]]gp/day. You may draw attention from distant patrons or even extraplanar beings.
+" name="roll_Perform-Check"></button></span>
 				<span class="sheet-table-data sheet-center"><input title="@{Perform-cs}" type="checkbox" name="attr_Perform-cs" value="((((3 * @{Perform-ranks}) + 3) - abs((3 * @{Perform-ranks}) - 3)) / 2)" /></span>
 				<span class="sheet-table-data sheet-center">*</span>
 				<span class="sheet-table-data sheet-left">Perform: <input title="@{Perform-name}" style="width:auto;" type="text" name="attr_Perform-name"></span>
@@ -1898,7 +1918,8 @@
 				<span class="sheet-table-data sheet-center"><input title="@{Perform-misc}" type="number" name="attr_Perform-misc" value="0"></span>
 			</div>
 			<div class="sheet-table-row">
-				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Perform2-Check}" type="roll" value="@{character_name}'s Perform: @{Perform2-name} check: [[1d20 + @{Perform2}]]" name="roll_Perform2-Check"></button></span>
+				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Perform2-Check}" type="roll" value="/em @{character_name} puts on a performance&#x00A;!power --whisper| --name|Performance: @{Perform2-name} --leftsub|@{character_name} --Result|[[1d20 + @{Perform2}]] --10+|Routine performance. You can earn [[1d10]]cp/day --15+|Enjoyable performance. Earn [[1d10]]sp/day --20+|Great performance. Earn[[3d10]]sp/day. In time you may be invited to a professional troupe --25+|Memorable performance. Earn [[1d6]]gp/day. You may come to attention of noble patrons and develop reputation --30+|Extraordinary performance. Earn [[3d6]]gp/day. You may draw attention from distant patrons or even extraplanar beings.
+" name="roll_Perform2-Check"></button></span>
 				<span class="sheet-table-data sheet-center"><input title="@{Perform2-cs}" type="checkbox" name="attr_Perform2-cs" value="((((3 * @{Perform2-ranks}) + 3) - abs((3 * @{Perform2-ranks}) - 3)) / 2)" /></span>
 				<span class="sheet-table-data sheet-center">*</span>
 				<span class="sheet-table-data sheet-left">Perform: <input title="@{Perform2-name}" style="width:auto;" type="text" name="attr_Perform2-name"></span>
@@ -1922,7 +1943,8 @@
 				<span class="sheet-table-data sheet-center"><input title="@{Perform2-misc}" type="number" name="attr_Perform2-misc" value="0"></span>
 			</div>
 			<div class="sheet-table-row">
-				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Perform3-Check}" type="roll" value="@{character_name}'s Perform: @{Perform3-name} check: [[1d20 + @{Perform3}]]" name="roll_Perform3-Check"></button></span>
+				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Perform3-Check}" type="roll" value="/em @{character_name} puts on a performance&#x00A;!power --whisper| --name|Performance: @{Perform3-name} --leftsub|@{character_name} --Result|[[1d20 + @{Perform3}]] --10+|Routine performance. You can earn [[1d10]]cp/day --15+|Enjoyable performance. Earn [[1d10]]sp/day --20+|Great performance. Earn[[3d10]]sp/day. In time you may be invited to a professional troupe --25+|Memorable performance. Earn [[1d6]]gp/day. You may come to attention of noble patrons and develop reputation --30+|Extraordinary performance. Earn [[3d6]]gp/day. You may draw attention from distant patrons or even extraplanar beings.
+" name="roll_Perform3-Check"></button></span>
 				<span class="sheet-table-data sheet-center"><input title="@{Perform3-cs}" type="checkbox" name="attr_Perform3-cs" value="((((3 * @{Perform3-ranks}) + 3) - abs((3 * @{Perform3-ranks}) - 3)) / 2)" /></span>
 				<span class="sheet-table-data sheet-center">*</span>
 				<span class="sheet-table-data sheet-left">Perform: <input title="@{Perform3-name}" style="width:auto;" type="text" name="attr_Perform3-name"></span>
@@ -1946,7 +1968,8 @@
 				<span class="sheet-table-data sheet-center"><input title="@{Perform3-misc}" type="number" name="attr_Perform3-misc" value="0"></span>
 			</div>
 			<div class="sheet-table-row">
-				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Profession-Check}" type="roll" value="@{character_name}'s Profession: @{Profession-name} check: [[1d20 + @{Profession}]]" name="roll_Profession-Check"></button></span>
+				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Profession-Check}" type="roll" value="/em @{character_name} gets down to business&#x00A;!power --name|Profession: @{Profession-name} --leftsub|@{character_name} --Result|[[1d20 + @{Profession}]] --Info|You can earn half your profession check in gold pieces per week of dedicated work. You can answer questions about your profession starting at DC10 for basic questions
+" name="roll_Profession-Check"></button></span>
 				<span class="sheet-table-data sheet-center"><input title="@{Profession-cs}" type="checkbox" name="attr_Profession-cs" value="((((3 * @{Profession-ranks}) + 3) - abs((3 * @{Profession-ranks}) - 3)) / 2)" /></span>
 				<span class="sheet-table-data sheet-center"></span>
 				<span class="sheet-table-data sheet-left">Profession: <input title="@{Profession-name}" style="width:auto;" type="text" name="attr_Profession-name"></span>
@@ -1970,7 +1993,8 @@
 				<span class="sheet-table-data sheet-center"><input title="@{Profession-misc}" type="number" name="attr_Profession-misc" value="0"></span>
 			</div>
 			<div class="sheet-table-row">
-				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Profession2-Check}" type="roll" value="@{character_name}'s Profession: @{Profession2-name} check: [[1d20 + @{Profession2}]]" name="roll_Profession2-Check"></button></span>
+				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Profession2-Check}" type="roll" value="/em @{character_name} gets down to business&#x00A;!power --name|Profession: @{Profession2-name} --leftsub|@{character_name} --Result|[[1d20 + @{Profession2}]] --Info|You can earn half your profession check in gold pieces per week of dedicated work. You can answer questions about your profession starting at DC10 for basic questions
+" name="roll_Profession2-Check"></button></span>
 				<span class="sheet-table-data sheet-center"><input title="@{Profession2-cs}" type="checkbox" name="attr_Profession2-cs" value="((((3 * @{Profession2-ranks}) + 3) - abs((3 * @{Profession2-ranks}) - 3)) / 2)" /></span>
 				<span class="sheet-table-data sheet-center"></span>
 				<span class="sheet-table-data sheet-left">Profession: <input title="@{Profession2-name}" style="width:auto;" type="text" name="attr_Profession2-name"></span>
@@ -1994,7 +2018,8 @@
 				<span class="sheet-table-data sheet-center"><input title="@{Profession2-misc}" type="number" name="attr_Profession2-misc" value="0"></span>
 			</div>
 			<div class="sheet-table-row">
-				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Profession3-Check}" type="roll" value="@{character_name}'s Profession: @{Profession3-name} check: [[1d20 + @{Profession3}]]" name="roll_Profession3-Check"></button></span>
+				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Profession3-Check}" type="roll" value="/em @{character_name} gets down to business&#x00A;!power --name|Profession: @{Profession2-name} --leftsub|@{character_name} --Result|[[1d20 + @{Profession2}]] --Info|You can earn half your profession check in gold pieces per week of dedicated work. You can answer questions about your profession starting at DC10 for basic questions
+" name="roll_Profession3-Check"></button></span>
 				<span class="sheet-table-data sheet-center"><input title="@{Profession3-cs}" type="checkbox" name="attr_Profession3-cs" value="((((3 * @{Profession3-ranks}) + 3) - abs((3 * @{Profession3-ranks}) - 3)) / 2)" /></span>
 				<span class="sheet-table-data sheet-center"></span>
 				<span class="sheet-table-data sheet-left">Profession: <input title="@{Profession3-name}" style="width:auto;" type="text" name="attr_Profession3-name"></span>
@@ -2018,7 +2043,8 @@
 				<span class="sheet-table-data sheet-center"><input title="@{Profession3-misc}" type="number" name="attr_Profession3-misc" value="0"></span>
 			</div>
 			<div class="sheet-table-row">
-				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Ride-Check}" type="roll" value="@{character_name}'s Ride check: [[1d20 + @{Ride}]]" name="roll_Ride-Check"></button></span>
+				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Ride-Check}" type="roll" value="!power --name|Ride --leftsub|@{character_name} --Result|[[1d20 + @{Ride}]] --Guide with knees|5 --Stay in saddle|5 --Fight with a combat-trained mount|10 --Cover|15 --Soft fall|15 --Leap|15 --Spur mount|15 --Control mount in battle|20 --Fast mount or dismount|20
+" name="roll_Ride-Check"></button></span>
 				<span class="sheet-table-data sheet-center"><input title="@{Ride-cs}" type="checkbox" name="attr_Ride-cs" value="((((3 * @{Ride-ranks}) + 3) - abs((3 * @{Ride-ranks}) - 3)) / 2)" /></span>
 				<span class="sheet-table-data sheet-center">*</span>
 				<span class="sheet-table-data sheet-left">Ride</span>
@@ -2042,7 +2068,8 @@
 				<span class="sheet-table-data sheet-center"><input title="@{Ride-misc}" type="number" name="attr_Ride-misc" value="0"></span>
 			</div>
 			<div class="sheet-table-row">
-				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Sense-Motive-Check}" type="roll" value="@{character_name}'s Sense Motive check: [[1d20 + @{Sense-Motive}]]" name="roll_Sense-Motive-Check"></button></span>
+				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Sense-Motive-Check}" type="roll" value="/em @{character_name} thinks something is up&#x00A;!power --whisper| --name|Sense Motive --leftsub|@{character_name} --Result|[[1d20 + @{Sense-Motive}]] --Hunch|DC20 You can get the feeling from another's behavior that something is wrong, such as when you're talking to an impostor. Alternatively, you can get the feeling that someone is trustworthy. --Sense Enchantment|DC25 or 15. You can tell someone's behaviour is influenced by an enchantment --Discern Secret Message|Opposed by Bluff check of person transmitting message
+" name="roll_Sense-Motive-Check"></button></span>
 				<span class="sheet-table-data sheet-center"><input title="@{Sense-Motive-cs}" type="checkbox" name="attr_Sense-Motive-cs" value="((((3 * @{Sense-Motive-ranks}) + 3) - abs((3 * @{Sense-Motive-ranks}) - 3)) / 2)" /></span>
 				<span class="sheet-table-data sheet-center">*</span>
 				<span class="sheet-table-data sheet-left">Sense Motive</span>
@@ -2066,7 +2093,8 @@
 				<span class="sheet-table-data sheet-center"><input title="@{Sense-Motive-misc}" type="number" name="attr_Sense-Motive-misc" value="0"></span>
 			</div>
 			<div class="sheet-table-row">
-				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Sleight-of-Hand-Check}" type="roll" value="@{character_name}'s Sleight of Hand check: [[1d20 + @{Sleight-of-Hand}]]" name="roll_Sleight-of-Hand-Check"></button></span>
+				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Sleight-of-Hand-Check}" type="roll" value="/w @{character_name} Sleight of hand check sent to GM&#x00A;!power --whisper| --name|Sleight of Hand --leftsub|@{character_name} --Result|[[1d20 + @{Sleight-of-Hand}]] --Info|Opposed by opponent's Perception. http://paizo.com/pathfinderRPG/prd/skills/sleightOfHand.html#_sleight-of-hand
+" name="roll_Sleight-of-Hand-Check"></button></span>
 				<span class="sheet-table-data sheet-center"><input title="@{Sleight-of-Hand-cs}" type="checkbox" name="attr_Sleight-of-Hand-cs" value="((((3 * @{Sleight-of-Hand-ranks}) + 3) - abs((3 * @{Sleight-of-Hand-ranks}) - 3)) / 2)" /></span>
 				<span class="sheet-table-data sheet-center"></span>
 				<span class="sheet-table-data sheet-left">Sleight of Hand</span>
@@ -2090,7 +2118,8 @@
 				<span class="sheet-table-data sheet-center"><input title="@{Sleight-of-Hand-misc}" type="number" name="attr_Sleight-of-Hand-misc" value="0"></span>
 			</div>
 			<div class="sheet-table-row">
-				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Spellcraft-Check}" type="roll" value="@{character_name}'s Spellcraft check: [[1d20 + @{Spellcraft}]]" name="roll_Spellcraft-Check"></button></span>
+				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Spellcraft-Check}" type="roll" value="/em @{character_name} makes a Spellcraft check&#x00A;!power --whisper| --name|Spellcraft --leftsub|@{character_name} --Result|[[1d20 + @{Spellcraft}]] --DC15 + Spell lvl|Identify spell being cast, learn from spellbook or scroll, Identify properties after using detect magic. --DC20 + Spell lvl|Decipher scroll
+" name="roll_Spellcraft-Check"></button></span>
 				<span class="sheet-table-data sheet-center"><input title="@{Spellcraft-cs}" type="checkbox" name="attr_Spellcraft-cs" value="((((3 * @{Spellcraft-ranks}) + 3) - abs((3 * @{Spellcraft-ranks}) - 3)) / 2)" /></span>
 				<span class="sheet-table-data sheet-center"></span>
 				<span class="sheet-table-data sheet-left">Spellcraft</span>
@@ -2114,7 +2143,8 @@
 				<span class="sheet-table-data sheet-center"><input title="@{Spellcraft-misc}" type="number" name="attr_Spellcraft-misc" value="0"></span>
 			</div>
 			<div class="sheet-table-row">
-				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Stealth-Check}" type="roll" value="@{character_name}'s Stealth check: [[1d20 + @{Stealth}]]" name="roll_Stealth-Check"></button></span>
+				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Stealth-Check}" type="roll" value="/em @{character_name} sneaks around&#x00A;!power --whisper| --name|Stealth --leftsub|@{character_name} --Result|[[1d20 + @{Stealth}]] --Info|Opposed by perception check. Modifiers based on size, armour, distraction etc.
+" name="roll_Stealth-Check"></button></span>
 				<span class="sheet-table-data sheet-center"><input title="@{Stealth-cs}" type="checkbox" name="attr_Stealth-cs" value="((((3 * @{Stealth-ranks}) + 3) - abs((3 * @{Stealth-ranks}) - 3)) / 2)" /></span>
 				<span class="sheet-table-data sheet-center">*</span>
 				<span class="sheet-table-data sheet-left">Stealth</span>
@@ -2138,7 +2168,8 @@
 				<span class="sheet-table-data sheet-center"><input title="@{Stealth-misc}" type="number" name="attr_Stealth-misc" value="0"></span>
 			</div>
 			<div class="sheet-table-row">
-				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Survival-Check}" type="roll" value="@{character_name}'s Survival check: [[1d20 + @{Survival}]]" name="roll_Survival-Check"></button></span>
+				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Survival-Check}" type="roll" value="/em @{character_name} makes a Survival check&#x00A;!power --whisper| --name|Survival --leftsub|@{character_name} --Result|[[1d20 + @{Survival}]] --Info|http://paizo.com/pathfinderRPG/prd/skills/survival.html#_survival
+" name="roll_Survival-Check"></button></span>
 				<span class="sheet-table-data sheet-center"><input title="@{Survival-cs}" type="checkbox" name="attr_Survival-cs" value="((((3 * @{Survival-ranks}) + 3) - abs((3 * @{Survival-ranks}) - 3)) / 2)" /></span>
 				<span class="sheet-table-data sheet-center">*</span>
 				<span class="sheet-table-data sheet-left">Survival</span>
@@ -2162,7 +2193,7 @@
 				<span class="sheet-table-data sheet-center"><input title="@{Survival-misc}" type="number" name="attr_Survival-misc" value="0"></span>
 			</div>
 			<div class="sheet-table-row">
-				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Swim-Check}" type="roll" value="@{character_name}'s Swim check: [[1d20 + @{Swim}]]" name="roll_Swim-Check"></button></span>
+				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Swim-Check}" type="roll" value="!power --name|Swim --leftsub|@{character_name} --Result|[[1d20 + @{Swim}]] --Calm Water|10 --Rough Water|15 --Stormy Water|20" name="roll_Swim-Check"></button></span>
 				<span class="sheet-table-data sheet-center"><input title="@{Swim-cs}" type="checkbox" name="attr_Swim-cs" value="((((3 * @{Swim-ranks}) + 3) - abs((3 * @{Swim-ranks}) - 3)) / 2)" /></span>
 				<span class="sheet-table-data sheet-center">*</span>
 				<span class="sheet-table-data sheet-left">Swim</span>
@@ -2186,7 +2217,7 @@
 				<span class="sheet-table-data sheet-center"><input title="@{Swim-misc}" type="number" name="attr_Swim-misc" value="0"></span>
 			</div>
 			<div class="sheet-table-row">
-				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Use-Magic-Device-Check}" type="roll" value="@{character_name}'s Use Magic Device check: [[1d20 + @{Use-Magic-Device}]]" name="roll_Use-Magic-Device-Check"></button></span>
+				<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Use-Magic-Device-Check}" type="roll" value="/em @{character_name} attempts to use a Magic Device&#x00A;!power --name|Use Magic Device --leftsub|@{character_name} --Result|[[1d20 + @{Use-Magic-Device}]] --Active Blindly|25 --Decipher Written Spell|25 + Spell Lvl --|Use Scroll|20 + Spell lvl --Use Wand|20 --Emulate class feature|20 --Emulate Race|25 --Emulate alignment|30" name="roll_Use-Magic-Device-Check"></button></span>
 				<span class="sheet-table-data sheet-center"><input title="@{Use-Magic-Device-cs}" type="checkbox" name="attr_Use-Magic-Device-cs" value="((((3 * @{Use-Magic-Device-ranks}) + 3) - abs((3 * @{Use-Magic-Device-ranks}) - 3)) / 2)" /></span>
 				<span class="sheet-table-data sheet-center"></span>
 				<span class="sheet-table-data sheet-left">Use Magic Device</span>
