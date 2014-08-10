@@ -50,7 +50,7 @@
 				<span class="sheet-table-header">Drain</span>
 			</div>
 			<div class="sheet-table-row">
-				<span class="sheet-table-row-name" style="text-align:left;"><button class="sheet-text-button" title="%{STR-Check}" type="roll" name="roll_STR-Check" value="@{character_name}'s STR Check: [[1d20 + @{STR-mod}]]">STR</button></span>
+				<span class="sheet-table-row-name" style="text-align:left;"><button class="sheet-text-button" title="%{STR-Check}" type="roll" name="roll_STR-Check" value="!power --name|STR Check --leftsub|@{character_name} --Result|[[1d20 + @{STR-mod}]]">STR</button></span>
 				<span class="sheet-table-data sheet-center"><input style="width:100%;" title="@{STR}" type="number" name="attr_STR" value="(@{STR-base} + @{STR-enhance} + @{STR-misc} + @{STR-drain})" disabled></span>
 				<span class="sheet-table-data sheet-center"><input style="width:100%;" title="@{STR-mod}" type="number" name="attr_STR-mod" value="((floor(@{STR}/2)-5) + floor(@{STR-temp}/2) - (floor(abs(@{STR-damage})/2)) - (floor(abs(@{STR-penalty})/2)))" disabled></span>
 				<span class="sheet-table-data sheet-center" style="vertical-align:middle;font-size:150%;"><b>|</b></span>
@@ -65,7 +65,7 @@
 				<span class="sheet-table-data sheet-center"><input style="width:100%;" title="@{STR-drain}" type="number" name="attr_STR-drain" value="0" max="0"></span>
 			</div>
 			<div class="sheet-table-row">
-				<span class="sheet-table-row-name" style="text-align:left;"><button class="sheet-text-button" title="%{DEX-Check}" type="roll" name="roll_DEX-Check" value="@{character_name}'s DEX Check: [[1d20 + @{DEX-mod}]]">DEX</button></span>
+				<span class="sheet-table-row-name" style="text-align:left;"><button class="sheet-text-button" title="%{DEX-Check}" type="roll" name="roll_DEX-Check" value="!power --name|DEX Check --leftsub|@{character_name} --Result|[[1d20 + @{DEX-mod}]]">DEX</button></span>
 				<span class="sheet-table-data sheet-center"><input style="width:100%;" title="@{DEX}" type="number" name="attr_DEX" value="(@{DEX-base} + @{DEX-enhance} + @{DEX-misc} + @{DEX-drain})" disabled></span>
 				<span class="sheet-table-data sheet-center"><input style="width:100%;" title="@{DEX-mod}" type="number" name="attr_DEX-mod" value="((floor(@{DEX}/2)-5) + floor(@{DEX-temp}/2) - (floor(abs(@{DEX-damage})/2)) - (floor(abs(@{DEX-penalty})/2)))" disabled></span>
 				<span class="sheet-table-data sheet-center" style="vertical-align:middle;font-size:150%;"><b>|</b></span>
@@ -80,7 +80,7 @@
 				<span class="sheet-table-data sheet-center"><input style="width:100%;" title="@{DEX-drain}" type="number" name="attr_DEX-drain" value="0" max="0"></span>
 			</div>
 			<div class="sheet-table-row">
-				<span class="sheet-table-row-name" style="text-align:left;"><button class="sheet-text-button" title="%{CON-Check}" type="roll" name="roll_CON-Check" value="@{character_name}'s CON Check: [[1d20 + @{CON-mod}]]">CON</button></span>
+				<span class="sheet-table-row-name" style="text-align:left;"><button class="sheet-text-button" title="%{CON-Check}" type="roll" name="roll_CON-Check" value="!power --name|CON Check --leftsub|@{character_name} --Result|[[1d20 + @{CON-mod}]]">CON</button></span>
 				<span class="sheet-table-data sheet-center"><input style="width:100%;" title="@{CON}" type="number" name="attr_CON" value="(@{CON-base} + @{CON-enhance} + @{CON-misc} + @{CON-drain})" disabled></span>
 				<span class="sheet-table-data sheet-center"><input style="width:100%;" title="@{CON-mod}" type="number" name="attr_CON-mod" value="((floor(@{CON}/2)-5) + floor(@{CON-temp}/2) - (floor(abs(@{CON-damage})/2)) - (floor(abs(@{CON-penalty})/2)))" disabled></span>
 				<span class="sheet-table-data sheet-center" style="vertical-align:middle;font-size:150%;"><b>|</b></span>
@@ -95,7 +95,7 @@
 				<span class="sheet-table-data sheet-center"><input style="width:100%;" title="@{CON-drain}" type="number" name="attr_CON-drain" value="0" max="0"></span>
 			</div>
 			<div class="sheet-table-row">
-				<span class="sheet-table-row-name" style="text-align:left;"><button class="sheet-text-button" title="%{INT-Check}" type="roll" name="roll_INT-Check" value="@{character_name}'s INT Check: [[1d20 + @{INT-mod}]]">INT</button></span>
+				<span class="sheet-table-row-name" style="text-align:left;"><button class="sheet-text-button" title="%{INT-Check}" type="roll" name="roll_INT-Check" value="!power --name|INT Check --leftsub|@{character_name} --Result|[[1d20 + @{INT-mod}]]">INT</button></span>
 				<span class="sheet-table-data sheet-center"><input style="width:100%;" title="@{INT}" type="number" name="attr_INT" value="(@{INT-base} + @{INT-enhance} + @{INT-misc} + @{INT-drain})" disabled></span>
 				<span class="sheet-table-data sheet-center"><input style="width:100%;" title="@{INT-mod}" type="number" name="attr_INT-mod" value="((floor(@{INT}/2)-5) + floor(@{INT-temp}/2) - (floor(abs(@{INT-damage})/2)) - (floor(abs(@{INT-penalty})/2)))" disabled></span>
 				<span class="sheet-table-data sheet-center" style="vertical-align:middle;font-size:150%;"><b>|</b></span>
@@ -110,7 +110,7 @@
 				<span class="sheet-table-data sheet-center"><input style="width:100%;" title="@{INT-drain}" type="number" name="attr_INT-drain" value="0" max="0"></span>
 			</div>
 			<div class="sheet-table-row">
-				<span class="sheet-table-row-name" style="text-align:left;"><button class="sheet-text-button" title="%{WIS-Check}" type="roll" name="roll_WIS-Check" value="@{character_name}'s WIS Check: [[1d20 + @{WIS-mod}]]">WIS</button></span>
+				<span class="sheet-table-row-name" style="text-align:left;"><button class="sheet-text-button" title="%{WIS-Check}" type="roll" name="roll_WIS-Check" value="!power --name|WIS Check --leftsub|@{character_name} --Result|[[1d20 + @{WIS-mod}]]">WIS</button></span>
 				<span class="sheet-table-data sheet-center"><input style="width:100%;" title="@{WIS}" type="number" name="attr_WIS" value="(@{WIS-base} + @{WIS-enhance} + @{WIS-misc} + @{WIS-drain})" disabled></span>
 				<span class="sheet-table-data sheet-center"><input style="width:100%;" title="@{WIS-mod}" type="number" name="attr_WIS-mod" value="((floor(@{WIS}/2)-5) + floor(@{WIS-temp}/2) - (floor(abs(@{WIS-damage})/2)) - (floor(abs(@{WIS-penalty})/2)))" disabled></span>
 				<span class="sheet-table-data sheet-center" style="vertical-align:middle;font-size:150%;"><b>|</b></span>
@@ -125,7 +125,7 @@
 				<span class="sheet-table-data sheet-center"><input style="width:100%;" title="@{WIS-drain}" type="number" name="attr_WIS-drain" value="0" max="0"></span>
 			</div>
 			<div class="sheet-table-row">
-				<span class="sheet-table-row-name" style="text-align:left;"><button class="sheet-text-button" title="%{CHA-Check}" type="roll" name="roll_CHA-Check" value="@{character_name}'s CHA Check: [[1d20 + @{CHA-mod}]]">CHA</button></span>
+				<span class="sheet-table-row-name" style="text-align:left;"><button class="sheet-text-button" title="%{CHA-Check}" type="roll" name="roll_CHA-Check" value="!power --name|CHA Check --leftsub|@{character_name} --Result|[[1d20 + @{CHA-mod}]]">CHA</button></span>
 				<span class="sheet-table-data sheet-center"><input style="width:100%;" title="@{CHA}" type="number" name="attr_CHA" value="(@{CHA-base} + @{CHA-enhance} + @{CHA-misc} + @{CHA-drain})" disabled></span>
 				<span class="sheet-table-data sheet-center"><input style="width:100%;" title="@{CHA-mod}" type="number" name="attr_CHA-mod" value="((floor(@{CHA}/2)-5) + floor(@{CHA-temp}/2) - (floor(abs(@{CHA-damage})/2)) - (floor(abs(@{CHA-penalty})/2)))" disabled></span>
 				<span class="sheet-table-data sheet-center" style="vertical-align:middle;font-size:150%;"><b>|</b></span>
@@ -185,7 +185,7 @@
 							<span class="sheet-table-header">Misc</span>
 						</div>
 						<div class="sheet-table-row">
-							<span class="sheet-table-data sheet-center" style="width:5%;"><button title="%{Roll-for-initiative}" class="tokenaction" type="roll" name="roll_Roll-for-initiative" value="@{character_name}'s Initiative result: [[((1d20 + @{init}) + (0.01 * @{init})) &amp;{tracker}]]"></button></span>
+							<span class="sheet-table-data sheet-center" style="width:5%;"><button title="%{Roll-for-initiative}" class="tokenaction" type="roll" name="roll_Roll-for-initiative" value="!power --name|Initiative --leftsub|@{character_name} --result|[[((1d20 + @{init}) + (0.01 * @{init})) &amp;{tracker}]]"></button></span>
 							<span class="sheet-table-data sheet-center"><input style="width:100%;" type="number" title="@{init}" name="attr_init" value="(@{DEX-mod} + @{init-misc} + @{init-trait})" disabled></span>
 							<span class="sheet-table-data sheet-center">=</span>
 							<span class="sheet-table-data sheet-center"><input style="width:100%;" type="number" title="@{DEX-mod}" name="attr_init-DEX" value="@{DEX-mod}" disabled></span>
@@ -2870,7 +2870,7 @@
 						</div>
 						<div class="sheet-table-row">
 							<span class="sheet-table-data sheet-left"><input title="@{spellclass-0-name}" type="text" name="attr_spellclass-0-name" placeholder="Class Name"></span>
-							<span class="sheet-table-data sheet-left"><button style="font-size:100%;" title="%{Spell-Class-0-CL-Check}" type="roll" name="roll_Spell-Class-0-CL-Check" value="@{character_name}'s @{spellclass-0-name} caster level check: [[1d20 + @{spellclass-0-level} + @{spellclass-0-level-misc}]]">CL Check</button></span>
+							<span class="sheet-table-data sheet-left"><button style="font-size:100%;" title="%{Spell-Class-0-CL-Check}" type="roll" name="roll_Spell-Class-0-CL-Check" value="!power --name|Caster Level Check --leftsub|@{character_name} --rightsub|@{spellclass-0-name} --Result|[[1d20 + @{spellclass-0-level} + @{spellclass-0-level-misc}]]">CL Check</button></span>
 							<span class="sheet-table-data sheet-left"><input title="@{spellclass-0-level-total}" type="number" name="attr_spellclass-0-level-total" value="(@{spellclass-0-level} + @{spellclass-0-level-misc})" disabled></span>
 							<span class="sheet-table-data sheet-left">=</span>
 							<span class="sheet-table-data sheet-left"><input title="@{spellclass-0-level}" type="number" name="attr_spellclass-0-level" value="0"></span>
@@ -2889,7 +2889,7 @@
 							<span class="sheet-table-header">Misc</span>
 						</div>
 						<div class="sheet-table-row">
-							<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Concentration-Check-0}" type="roll" value="@{character_name}'s Concentration check: [[1d20 + @{Concentration-0}]]" name="roll_Concentration-Check-0">Concentration</button></span>
+							<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Concentration-Check-0}" type="roll" value="!power --name|Concentration --leftsub|@{character_name} --Result|[[1d20 + @{Concentration-0}]]" name="roll_Concentration-Check-0">Concentration</button></span>
 							<span class="sheet-table-data sheet-center"><input title="@{Concentration-0}" type="number" name="attr_Concentration-0" value="(@{spellclass-0-level} + @{Concentration-0-ability} + @{Concentration-0-misc})" disabled></span>
 							<span class="sheet-table-data sheet-center">=</span>
 							<span class="sheet-table-data sheet-center">
@@ -3068,7 +3068,7 @@
 						</div>
 						<div class="sheet-table-row">
 							<span class="sheet-table-data sheet-left"><input title="@{spellclass-1-name}" type="text" name="attr_spellclass-1-name" placeholder="Class Name"></span>
-							<span class="sheet-table-data sheet-left"><button style="font-size:100%;" title="%{Spell-Class-1-CL-Check}" type="roll" name="roll_Spell-Class-1-CL-Check" value="@{character_name}'s @{spellclass-1-name} caster level check: [[1d20 + @{spellclass-1-level} + @{spellclass-1-level-misc}]]">CL Check</button></span>
+							<span class="sheet-table-data sheet-left"><button style="font-size:100%;" title="%{Spell-Class-1-CL-Check}" type="roll" name="roll_Spell-Class-1-CL-Check" value="!power --name|Caster Level Check --leftsub|@{character_name} --rightsub|@{spellclass-1-name} --Result|[[1d20 + @{spellclass-1-level} + @{spellclass-1-level-misc}]]">CL Check</button></span>
 							<span class="sheet-table-data sheet-left"><input title="@{spellclass-1-level-total}" type="number" name="attr_spellclass-1-level-total" value="(@{spellclass-1-level} + @{spellclass-1-level-misc})" disabled></span>
 							<span class="sheet-table-data sheet-left">=</span>
 							<span class="sheet-table-data sheet-left"><input title="@{spellclass-1-level}" type="number" name="attr_spellclass-1-level" value="0"></span>
@@ -3087,7 +3087,7 @@
 							<span class="sheet-table-header">Misc</span>
 						</div>
 						<div class="sheet-table-row">
-							<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Concentration-Check-1}" type="roll" value="@{character_name}'s Concentration check: [[1d20 + @{Concentration-1}]]" name="roll_Concentration-Check-1">Concentration</button></span>
+							<span class="sheet-table-data sheet-center"><button style="font-size:100%;" title="%{Concentration-Check-1}" type="roll" value="!power --name|Concentration --leftsub|@{character_name} --Result|[[1d20 + @{Concentration-1}]]" name="roll_Concentration-Check-1">Concentration</button></span>
 							<span class="sheet-table-data sheet-center"><input title="@{Concentration-1}" type="number" name="attr_Concentration-1" value="(@{spellclass-1-level} + @{Concentration-1-ability} + @{Concentration-1-misc})" disabled></span>
 							<span class="sheet-table-data sheet-center">=</span>
 							<span class="sheet-table-data sheet-center">
